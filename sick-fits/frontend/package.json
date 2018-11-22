@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
     "apollo-boost": "^0.1.16",
     "apollo-client": "^2.4.2",
     "babel-core": "^7.0.0-bridge.0",
@@ -36,9 +37,12 @@
     "react-stripe-checkout": "^2.6.3",
     "react-transition-group": "^2.5.0",
     "styled-components": "^3.4.9",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6",
     "waait": "^1.0.2"
   },
   "devDependencies": {
+    "@types/next": "^7.0.5",
     "babel-jest": "^23.6.0",
     "babel-plugin-module-resolver": "^3.1.1",
     "casual": "^1.5.19",
@@ -64,7 +68,8 @@
     "env": {
       "development": {
         "presets": [
-          "next/babel"
+          "next/babel",
+          "@zeit/next-typescript/babel"
         ],
         "plugins": [
           [
